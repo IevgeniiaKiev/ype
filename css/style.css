@@ -39,8 +39,14 @@ a {
 }
 
 .row {
+  -webkit-display: flex;
+  -ms-display: flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -102,7 +108,11 @@ a {
 .nav {
   width: 100%;
   margin-top: 10px;
+  -webkit-display: flex;
+  -ms-display: flex;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -174,7 +184,11 @@ a {
 
 @media screen and (min-width: 768px) {
   .nav_deskt {
+    -webkit-display: flex;
+    -ms-display: flex;
     display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
     align-items: center;
   }
 
@@ -502,6 +516,8 @@ a {
 }
 
 .slick-track {
+  -webkit-display: flex !important;
+  -ms-display: flex !important;
   display: flex !important;
 }
 
@@ -543,6 +559,8 @@ a {
 }
 
 .review__head {
+  -webkit-display: flex;
+  -ms-display: flex;
   display: flex;
   margin-bottom: 20px;
 }
@@ -566,7 +584,11 @@ a {
 
 .table {
   max-width: 890px;
+  -webkit-display: flex;
+  -ms-display: flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 10px;
   margin-top: 20px;
@@ -577,6 +599,8 @@ a {
 }
 
 .table-cell {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
   flex-grow: 1;
   width: 33.33%;
   padding: 10px 5px;
@@ -688,6 +712,8 @@ p span {
 .wrap-1120 {
   max-width: 100%;
   margin: 0 auto;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start;
 }
 
@@ -741,7 +767,11 @@ p span {
 
 .flex-requir {
   margin-top: 30px;
+  -webkit-display: flex;
+  -ms-display: flex;
   display: flex;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start;
 }
 
@@ -769,8 +799,14 @@ input[type="radio"] {
 .acc-title {
 	width: 100%;
 	padding: 8px;
+  -webkit-display: flex;
+  -ms-display: flex;
 	display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start;
   font-size: 12px;
 	cursor: pointer;
@@ -952,7 +988,11 @@ input[type="radio"]:checked + .acc-box .acc-closed {
 
 @media screen and (min-width: 768px) {
   .footer .col-md-6:last-child {
+    -webkit-display: flex;
+    -ms-display: flex;
     display: flex;
+    -ms-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
 
