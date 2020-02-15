@@ -25,13 +25,21 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  color: #474747;
+  color: #151515;
 }
 
 a {
@@ -77,6 +85,12 @@ a {
   padding: 15px;
   background-color: #fff;
   z-index: 2;
+}
+
+@media screen and (min-width: 1366px) {
+  .header {
+    max-width: 1200px;
+  }
 }
 
 .header__call {
@@ -125,7 +139,7 @@ a {
 
 .nav__open {
   font-size: 30px;
-  color: #474747;
+  color: #151515;
   cursor: pointer;
 }
 
@@ -165,7 +179,7 @@ a {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #474747;
+  background: #151515;
   transform: scaleX(0);
   transition: transform .5s ease;
 }
@@ -205,13 +219,14 @@ a {
   right: 25px;
   font-size: 40px;
   margin-left: 50px;
-  color: #474747;
+  color: #151515;
 }
 
 .heading-main {
   display: inline;
+  color: #474747;
   font-size: 34px;
-  font-weight: 600;
+  font-weight: 700;
   border-bottom: 4px solid #ff9800;
 }
 
@@ -227,18 +242,29 @@ a {
   padding-top: 140px;
 }
 
-
 @media screen and (min-width: 768px) {
   .wrap-940 {
     padding-top: 0;
     margin-top: 65px;
     background: url('../img/people.svg') no-repeat top right;
-    background-size: 57%;
+    background-size: 50%;
   }
 
   .wrap-940 .col-md-6 {
-    padding-top: 20px;
-    padding-left: 25px;
+    padding: 20px 25px 0 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap-940 {
+    background-size: 57%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .wrap-940 {
+    max-width: 1200px;
+    background-size: 45%;
   }
 }
 
@@ -340,6 +366,12 @@ a {
   border-radius: 19px;
 }
 
+@media screen and (min-width: 1366px) {
+  .wrap-shadow {
+    max-width: 1100px;
+  }
+}
+
 .wrap-shadow_deskt {
   display: none;
 }
@@ -388,8 +420,9 @@ a {
 }
 
 .heading {
+  color: #474747;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .heading_center {
@@ -416,6 +449,12 @@ a {
   max-width: 865px;
   margin: 0 auto;
   margin-top: 80px;
+}
+
+@media screen and (min-width: 1366px) {
+  .wrap-865 {
+    max-width: 900px;
+  }
 }
 
 .mrgn-top_20 {
@@ -470,8 +509,12 @@ a {
 }
 
 @media screen and (min-width: 1366px) {
+  .wrap-900 {
+    max-width: 1050px;
+  }
+
   .wrap-900 .img {
-    margin-left: -55px;
+    margin-left: -15px;
   }
 }
 
@@ -565,6 +608,12 @@ a {
   margin-bottom: 20px;
 }
 
+.review__img {
+  display: block;
+  width: 84px;
+  border-radius: 50%;
+}
+
 .review__user {
   margin-top: 15px;
   margin-left: 25px;
@@ -583,7 +632,7 @@ a {
 }
 
 .table {
-  max-width: 890px;
+  max-width: 920px;
   -webkit-display: flex;
   -ms-display: flex;
   display: flex;
@@ -682,8 +731,8 @@ a {
   }
 }
 
-.wrap-800 {
-  max-width: 800px;
+.wrap-850 {
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -691,18 +740,18 @@ p span {
   font-weight: 600;
 }
 
-.wrap-800 .img {
+.wrap-850 .img {
   max-width: 220px;
   margin: 0 auto;
   margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .wrap-800 .heading {
+  .wrap-850 .heading {
     margin-top: 63px;
   }
 
-  .wrap-800 .img {
+  .wrap-850 .img {
     margin-top: 0;
     margin-right: 44px;
     float: right;
@@ -712,9 +761,6 @@ p span {
 .wrap-1120 {
   max-width: 100%;
   margin: 0 auto;
-  -webkit-align-items: flex-start;
-  -ms-align-items: flex-start;
-  align-items: flex-start;
 }
 
 .block-rounded {
@@ -922,7 +968,7 @@ input[type="radio"]:checked + .acc-box .acc-closed {
   padding: 10px;
   border-radius: 17px;
   font-size: 12px;
-  color: #474747;
+  color: #151515;
   background-color: #fff0c3;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -938,19 +984,19 @@ input[type="radio"]:checked + .acc-box .acc-closed {
 }
 
 ::-webkit-input-placeholder {
-  color: #474747;
+  color: #151515;
 }
 
 ::-moz-placeholder {
-  color: #474747;
+  color: #151515;
 }
 
 :-ms-input-placeholder {
-  color: #474747;
+  color: #151515;
 }
 
 :-moz-placeholder {
-  color: #474747;
+  color: #151515;
 }
 
 .captcha {
