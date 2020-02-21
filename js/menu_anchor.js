@@ -5,11 +5,11 @@ $(document).ready(function() {
       if (hash) {
         e.preventDefault();
 
-        if (parseInt($(window).width()) > 767) {
+        if (parseInt($(window).width()) > 1023) {
           $('html, body').animate({scrollTop: $(hash).offset().top - 30}, 750);
         } else {
           $('#sideNav').css('width', 0);
-          $('html, body').animate({scrollTop: $(hash).offset().top - 130}, 750);
+          $('html, body').animate({scrollTop: $(hash).offset().top - 90}, 750);
         }
       }
     });
